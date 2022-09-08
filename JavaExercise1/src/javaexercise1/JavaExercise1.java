@@ -13,19 +13,19 @@ public class JavaExercise1 {
         
         Scanner entrada = new Scanner(System.in);
         
-        int numero1, numero2, numero3, media;
+        int number1, number2, number3, avarage;
         
-        System.out.print("Digite o primeiro número: ");
-        numero1 = entrada.nextInt();
+        System.out.print("Type the first number: ");
+        number1 = entrada.nextInt();
         
-        System.out.print("Digite o segundo número: ");
-        numero2 = entrada.nextInt();
+        System.out.print("Type the second number: ");
+        number2 = entrada.nextInt();
         
-        System.out.print("Digite o terceiro número: ");
-        numero3 = entrada.nextInt();
+        System.out.print("Type the third number: ");
+        number3 = entrada.nextInt();
         
-        media = (numero1 + numero2 + numero3) / 3;
-        System.out.println("A média aritmética é " + media);
+        avarage = (number1 + number2 + number3) / 3;
+        System.out.println("The arithmetic mean is " + avarage);
     }
     
 }
