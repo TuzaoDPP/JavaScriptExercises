@@ -11,18 +11,18 @@ public class JavaExercise1 {
     
     public static void main(String[] args) {
         
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         int number1, number2, number3, avarage;
         
         System.out.print("Type the first number: ");
-        number1 = entrada.nextInt();
+        number1 = input.nextInt();
         
         System.out.print("Type the second number: ");
-        number2 = entrada.nextInt();
+        number2 = input.nextInt();
         
         System.out.print("Type the third number: ");
-        number3 = entrada.nextInt();
+        number3 = input.nextInt();
         
         avarage = (number1 + number2 + number3) / 3;
         System.out.println("The arithmetic mean is " + avarage);
