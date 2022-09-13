@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package javaexercise1;
 import java.util.*;
 
@@ -13,16 +9,12 @@ public class JavaExercise1 {
         
         Scanner input = new Scanner(System.in);
         
-        int number1, number2, number3, avarage;
+        double number1, number2, number3, avarage;
         
-        System.out.print("Type the first number: ");
-        number1 = input.nextInt();
-        
-        System.out.print("Type the second number: ");
-        number2 = input.nextInt();
-        
-        System.out.print("Type the third number: ");
-        number3 = input.nextInt();
+        System.out.print("Type three numbers: ");
+        number1 = input.nextDouble();
+        number2 = input.nextDouble();
+        number3 = input.nextDouble();
         
         avarage = (number1 + number2 + number3) / 3;
         System.out.println("The arithmetic mean is " + avarage);
