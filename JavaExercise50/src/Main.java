@@ -7,7 +7,6 @@ public class Main {
 
         int[] numSorteados = new int[6];
         int[] numJogados = new int[6];
-        int acerto = 0;
 
         for(int i = 0; i < 6; i ++){
             System.out.println("Insira o numero "+ (i +1) + " que foi sorteado");
@@ -19,17 +18,19 @@ public class Main {
             numJogados[i] = input.nextInt();
         }
 
-        for (int i = 0; i < numSorteados.length; i++) {
+        System.out.format("Você acertou %d número(s)\n", acertos(numSorteados, numJogados));
+    }
+    public static int acertos(int[] numS, int[] numJ){
+        int acerto = 0;
+        for (int i = 0; i < numS.length; i++) {
 
-            for (int j = 0; j < numJogados.length; j++) {
+            for (int j = 0; j < numJ.length; j++) {
 
-                if (numJogados[j] == numSorteados[i]) {
+                if (numJ[j] == numS[i]) {
                     acerto++;
                 }
             }
         }
-
-        System.out.format("Você acertou %d número(s)\n", acerto);
-
+        return acerto;
     }
 }
