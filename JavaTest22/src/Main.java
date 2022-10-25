@@ -34,6 +34,7 @@ public class Main {
             case 3:
                 System.out.println("Tesoura!");
                 break;
+            default: System.out.println("Essa opção não existe");
         }
     }
     public static void imprimeRandom(int jankenpo){
