@@ -2,8 +2,13 @@ public class ContaBancaria {
     public int numero, agencia;
     private double saldo;
 
-    public void Sacar(double valor){
-        saldo -= valor;
+    public boolean Sacar(double valor){
+        if(valor <= saldo){
+            saldo -= valor;
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public void Depositar(double valor){
