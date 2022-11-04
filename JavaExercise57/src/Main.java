@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-    public static int pesquisaSequencial(int[]notas, int valor){
+    public static void pesquisaSequencial(int[]notas, int valor){
         int i;
         for (i = 0; i < 6; i++) {
             if (valor == notas[i]) {
@@ -11,11 +11,9 @@ public class Main {
         }
         if (i == 6)
             System.out.println("Elemento não encontrado\n");
-
-        return valor;
     }
 
-    public static int pesquisaBinaria(int[]notas, int valor){
+    public static void pesquisaBinaria(int[]notas, int valor){
         int inicio = 0, meio, fim = 5, contador = 0;
 
         while(inicio <= fim){
@@ -32,8 +30,6 @@ public class Main {
         }
 
         System.out.println("O número de comparações foi: " + contador);
-
-        return valor;
     }
 
     public static void main(String[] args) {
